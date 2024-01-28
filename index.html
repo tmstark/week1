@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyglotHelloWorld</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2; 
+            color: #333; 
+        }
+
+        h1 {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        #outputText {
+            background-color: #ffffff;
+            padding: 10px; 
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        button {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px; 
+            margin: 5px;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 16px; 
+        }
+
+        #englishButton {
+            background-color: #0000ff;
+        }
+
+        #spanishButton {
+            background-color: #ffcc66;
+        }
+
+        #chineseButton {
+            background-color: #ff0000; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="outputText">Hello World</h1>
+
+    <button id="englishButton" onclick="changeText('Hello World', '#66ccff')">English</button>
+    <button id="spanishButton" onclick="changeText('Hola Mundo', '#ffcc66')">Spanish</button>
+    <button id="chineseButton" onclick="changeText('Nǐ Hǎo, Shìjiè', '#ff6666')">Chinese</button>
+
+    <script>
+        function changeText(text, bgColor) {
+            document.getElementById('outputText').innerText = text;
+            document.getElementById('outputText').style.backgroundColor = bgColor;
+        }
+    </script>
+
+</body>
+
+</html>
